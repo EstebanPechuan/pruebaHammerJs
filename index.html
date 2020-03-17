@@ -35,10 +35,10 @@
 
 
 	<script>
-		let box = hammer()
-		box.on('tap', function(event) {
-			box.style.cssText = 'top = 10%;'
-		})
+		var miEvento = new Hammer(document.getElementById("miboton"));
+    		miEvento.on('tap', function(ev) {
+        		alert("has pulsado");
+    		});
 	</script>
 </body>
 </html>
