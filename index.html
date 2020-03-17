@@ -35,8 +35,8 @@
 
 
 	<script>
-		let box = document.getElementById('box')
-		Hammer(box).on('tap', function(event) {
+		let box = hammer()
+		box.on('tap', function(event) {
 			box.style.cssText = 'top = 10%;'
 		})
 	</script>
