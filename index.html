@@ -37,8 +37,17 @@
 	<script>
 		let box = document.getElementById('box')
 		let boxTest = new Hammer(box)
-		boxTest.on('tap', function() {
+		boxTest.on('panup', function() {
 			box.style.cssText = 'background-color: salmon;'
+		})
+		boxTest.on('pandown', function() {
+			box.style.cssText = 'background-color: black;'
+		})
+		boxTest.on('panleft', function() {
+			box.style.cssText = 'background-color: white;'
+		})
+		boxTest.on('panright', function() {
+			box.style.cssText = 'background-color: darkgreen;'
 		})
 	</script>
 </body>
