@@ -36,8 +36,9 @@
 
 	<script>
 		let box = document.getElementById('box')
-		Hammer(box).on('tap', () => {
-			box.style.cssText = 'top = 10%;'
+		let boxTest = new Hammer(box)
+		boxTest.on('tap', function() {
+			box.style.cssText = 'background-color: salmon;'
 		})
 	</script>
 </body>
