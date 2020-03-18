@@ -130,7 +130,7 @@
 
 		contHammer = new Hammer(cont)
 
-		contHammer.on('swipeleft', function() {
+		contHammer.on('panleft', function() {
 
 			x -= 90
 			cont.style.cssText = 'transform: rotateY(' + x + 'deg);'
@@ -138,7 +138,7 @@
 
 
 
-		contHammer.on('swiperight', function() {
+		contHammer.on('panright', function() {
 
 			x += 90
 			cont.style.cssText = 'transform: rotateY(' + x + 'deg);'
